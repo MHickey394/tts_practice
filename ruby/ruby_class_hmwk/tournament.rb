@@ -33,7 +33,7 @@ def  tournament_menu
     number = gets.chomp.to_i
     number.times.do
     puts "Type in team name"
-    team = gets.chomp
+    team = gets.chomp.upcase
     teams_map[team] = Teams.new
 
 when 2
@@ -55,3 +55,43 @@ end
 end
 end
 run tournament_menu
+
+#class Tournament
+  #attr_accessor :teams, :rounds
+  #def initialize teams, rounds
+    #@round = 0
+    #@eligible = teams
+#end
+
+#def createround
+  #out = "Round #{@round += 1}: "
+  #inCurrentRound = []
+    #until (@eligible.length.isPowerOf(2))
+    #out += "#{@eligible.first} vs. bye, "
+    #inCurrentRound.push @eligible.shift
+  #puts "How many teams are in the tournament?"
+#number = gets.chomp.to_i
+  #number.times do
+    #puts "Add team name to tournament."
+  #teams= gets.chomp.upcase
+    #puts "Add team rank."
+    #rank = gets.chomp
+  #end
+
+  #def seed
+  #if number.size.odd?
+  #@round = number.size -1
+#else
+  #@round.times do |index|
+    #@round[index] = []
+    #matches_per_round.times do |match_index|
+      #@round[index] << [teams[match_index], teams.reverse[match_index]]
+
+#teams = [teams[0]] + teams [1..-1].rotate(-1)
+#end
+#end
+#end
+#end
+#end
+#end
+#end
