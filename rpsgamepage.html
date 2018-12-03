@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content = "width=device-width, initial-scale=1.0"/>
+    <script src="rpsstylesheet.css" alt="rock"></script>
+<style>
+  canvas{
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+  }
+</style>
+    <title> Rock, Paper, Scissors</title>
+  </head>
+  <body>
+
+    <h1> Rock, Paper, Scissors</h1>
+<img class="icon" id="rock" src="rock.png" alt="photo of rock"  width="50" height="50">
+<img class="icon" id="paper" src="paper.jpg" alt="photo of paper" width="50" height="50">
+<img class="icon" id="scissors" src="scissors.png" alt="photo of scissors" width="50" height="50">
+
+<p></p>
+<div class="wrapper">
+  <p id="output"></p>
+</div>
+
+<div style="border: 0px solid blue; display: block;">
+  <p id="myChoice"></p>
+  <p>- VS -</p>
+  <p id="cpuChoice"></p>
+  <hr>
+  <p id="verdict"></p>
+</div>
+
+<div id="winner">😁</div>
+<div id="loser">😫</div>
+<div id="tied">🙈</div>
+
+  <script src=" rpsgame.js"></script>
+  </body>
+</html>
